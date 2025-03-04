@@ -91,14 +91,14 @@
                 str = str.split(regex)[0];
                 regex = /(?=[A-Z])(?![a-z])/;
                 let verses = str.split(regex);
-                if (verses.length < 4 ) { verses.push(''); }
+                if (verses.length < 5 ) { verses.push(''); }
                 for (let i = 0; i < verses.length; i++) {
                   if (typeof verses[i] === undefined ) {
                     verses[i] = '';
                   }
                 }
 
-                str = verses[0]+verses[1]+verses[2]+verses[3];
+                str = verses[0]+verses[1]+verses[2]+verses[3]+verses[4];
 
                 // Write the poem out to the page
 
